@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Carro_1 = require("./Carro");
+const Client_1 = require("./Client");
+const Compra_1 = require("./Compra");
+const Funcionario_1 = require("./Funcionario");
+const carro = new Carro_1.Carro('camaro', 2013, 10000);
+const cliente = new Client_1.Client('Matheus', 4999);
+const funcionario = new Funcionario_1.Funcionario('carlos');
+const compra = new Compra_1.Comprar(cliente, carro, funcionario);
+compra.detalhes();
